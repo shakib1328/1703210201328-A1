@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('website.pages.home');
 });
+Route::get('reg','EmployeeController@employee');
+Route::post('store','EmployeeController@store');
+Route::get('all','EmployeeController@all');
